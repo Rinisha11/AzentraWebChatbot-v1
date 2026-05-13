@@ -1,0 +1,16 @@
+services:
+  chatbot-backend:
+    build:
+      context: ../../chatbot-backend
+      dockerfile: Dockerfile
+    container_name: example-client-chatbot
+    restart: unless-stopped
+    env_file:
+      - .env
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./sites.json:/app/client/sites.json:ro
+      - ./data:/app/client/data
+      - ./chroma:/app/client/chroma
+      - ./logs:/app/client/logs

@@ -1,0 +1,18 @@
+# Modern Async-First Requirements (2026 Focus)
+fastapi
+uvicorn[standard]
+gunicorn  # modern production-ready ASGI server wrapper
+websockets
+python-dotenv
+langchain-openai>=0.1.0 # Async support is standard now
+langchain>=1.0.0
+langchain-classic>=1.0.0
+langchain-community>=0.1.0 # Vectorstore drivers (e.g. for Chroma) are often async-capable now
+langchain-core>=0.2.0
+langchain-Chroma
+langgraph>=0.1.0 # Built on modern async principles
+chromadb # Async vector store example; pgvector, qdrant, or pinecone with modern clients are also excellent async options
+markdown
+pypdf # <-- NEW: Essential library for modern PDF parsing
+pyjwt 
+tenacity

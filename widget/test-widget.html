@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chatbot Test</title>
+
+  <link rel="stylesheet" href="./chatbot-widget.css" />
+</head>
+
+<body>
+  <h1>Widget Test</h1>
+
+  <script src="./chatbot-widget.iife.js"></script>
+
+  <script>
+    WebsiteChatbot.mountChatbotWidget({
+      backendUrl: "http://localhost:5000",
+      siteId: "default-site"
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.env
+venv/
+__pycache__/
+*.log
+*.err
+chat_logs_modern.json
+chat_logs_modern.jsonl
+akinfoChroma/
