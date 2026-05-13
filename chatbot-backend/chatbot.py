@@ -449,6 +449,15 @@ async def widget_config(site_id: str = "default-site"):
         "welcomeMessage": site_config["welcome_message"],
     }
 
+@app.get("/openai-test")
+async def openai_test():
+
+    llm = ChatOpenAI(model="gpt-4.1-mini")
+
+    response = await llm.ainvoke("Say hello")
+
+    return {"response": response.content}
+
 
 @app.websocket("/ws/{thread_id}")
 async def websocket_chat(
@@ -515,6 +524,7 @@ async def websocket_chat(
             logger.info(
             f"[CHAT][USER] site={site_id} thread={thread_id} message={user_input}"
         )
+            logger.info(f"RAW WS DATA: {data}")
 
             if not user_input:
                 continue
