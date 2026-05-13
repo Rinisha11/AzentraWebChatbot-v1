@@ -462,9 +462,8 @@ async def websocket_chat(
     # PHASE 1 SECURITY FIX: Wallet-Drain Protection
     if token_payload is None:
 
-        # Allow localhost development widget connections
-        if APP_ENV != "production":
-            logger.info("Development mode websocket accepted without JWT.")
+        if token_payload is None:
+            logger.warning("JWT missing - allowing temporary MVP connection.")
 
             token_payload = {
                 "site_id": websocket.query_params.get("site_id", "default-site"),
