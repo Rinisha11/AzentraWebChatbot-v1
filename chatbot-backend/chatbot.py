@@ -406,9 +406,13 @@ async def startup_event():
 
 # --- API Endpoints ---
 
-@app.get("/", response_class=HTMLResponse)
-async def index():
-    return HTMLResponse(f"<h1>Reusable multi-tenant chatbot backend is running ({APP_ENV}).</h1>")
+@app.get("/")
+async def root():
+    return {
+        "status": "online",
+        "service": "Azentra WebChatbot API",
+        "environment": APP_ENV
+    }
 
 
 @app.get("/healthz")
