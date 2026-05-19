@@ -1,21 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Chatbot Test</title>
-
+  <title>Widget Debug</title>
   <link rel="stylesheet" href="./chatbot-widget.css" />
 </head>
 
 <body>
-  <h1>Widget Test</h1>
+  <h1>Widget Debug</h1>
 
   <script src="./chatbot-widget.iife.js"></script>
 
   <script>
-    WebsiteChatbot.mountChatbotWidget({
-      backendUrl: "https://azentrawebchatbot-v1-production.up.railway.app/",
-      siteId: "default-site"
-    });
+    console.log(window);
+
+    console.log("WebsiteChatbot:", window.WebsiteChatbot);
+
+    if (window.WebsiteChatbot) {
+      WebsiteChatbot.mountChatbotWidget({
+        backendUrl: "https://azentrawebchatbot-v1-production.up.railway.app",
+        siteId: "default-site"
+      });
+    } else {
+      console.error("Widget not loaded");
+    }
   </script>
 </body>
 </html>
