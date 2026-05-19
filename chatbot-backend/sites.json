@@ -1,6 +1,6 @@
 {
   "default-site": {
-    "brand_name": "Example Client",
+    "brand_name": "Azentra AI",
     "assistant_name": "ZENTRA - Azentra's AI Assistant",
     "welcome_message": "Hi, how can I help you today?",
     "allowed_origins": [
