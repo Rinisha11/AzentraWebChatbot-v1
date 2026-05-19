@@ -140,6 +140,49 @@
 
 /* HEADER */
 
+.chatbot-header{
+  background:
+    linear-gradient(
+      135deg,
+      #16A34A,
+      #15803D
+    );
+
+  color:white;
+
+  padding:14px 18px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:space-between;
+
+  min-height:68px;
+
+  border-bottom:
+    1px solid rgba(255,255,255,0.08);
+}
+
+.chatbot-kicker{
+  margin:0 0 2px;
+
+  font-size:10px;
+
+  letter-spacing:.08em;
+
+  text-transform:uppercase;
+
+  opacity:.82;
+
+  color:white;
+
+  font-family:
+    Inter,
+    system-ui,
+    sans-serif;
+}
+
 .chatbot-header h3{
   margin:0;
 
@@ -166,46 +209,6 @@
     rgba(255,255,255,0.16);
 
   font-size:13px;
-
-  font-weight:600;
-
-  color:white;
-
-  backdrop-filter:
-    blur(10px);
-
-  font-family:
-    Inter,
-    system-ui,
-    sans-serif;
-}
-
-.chatbot-header h3{
-  margin:0;
-
-  font-size:20px;
-
-  font-weight:700;
-
-  line-height:1.2;
-
-  color:white;
-
-  font-family:
-    Inter,
-    system-ui,
-    sans-serif;
-}
-
-.chatbot-status{
-  padding:10px 16px;
-
-  border-radius:999px;
-
-  background:
-    rgba(255,255,255,0.18);
-
-  font-size:14px;
 
   font-weight:600;
 
