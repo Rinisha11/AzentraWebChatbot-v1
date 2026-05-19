@@ -140,42 +140,39 @@
 
 /* HEADER */
 
-.chatbot-header{
-  background:
-    linear-gradient(
-      135deg,
-      #16A34A,
-      #15803D
-    );
+.chatbot-header h3{
+  margin:0;
+
+  font-size:16px;
+
+  font-weight:700;
+
+  line-height:1.2;
 
   color:white;
 
-  padding:18px 20px;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:space-between;
-
-  min-height:88px;
-
-  border-bottom:
-    1px solid rgba(255,255,255,0.08);
+  font-family:
+    Inter,
+    system-ui,
+    sans-serif;
 }
 
-.chatbot-kicker{
-  margin:0 0 4px;
+.chatbot-status{
+  padding:8px 14px;
 
-  font-size:11px;
+  border-radius:999px;
 
-  letter-spacing:.08em;
+  background:
+    rgba(255,255,255,0.16);
 
-  text-transform:uppercase;
+  font-size:13px;
 
-  opacity:.85;
+  font-weight:600;
 
   color:white;
+
+  backdrop-filter:
+    blur(10px);
 
   font-family:
     Inter,
