@@ -9,6 +9,7 @@
     "allowed_origins": [
       "https://azentraglobal.com",
       "https://www.azentraglobal.com",
+      "https://azentra-website-chatbot.vercel.app",
 
       "https://azentrawebchatbot-v1-production.up.railway.app",
       "https://azentra-web-chatbot-v1.vercel.app",
